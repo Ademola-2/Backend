@@ -16,14 +16,14 @@ const Signup = () => {
       Password,
     };
  try {
-    const response = await axios.post("http://localhost:4000/Api/User/sign-up", userDetails)
+    const response = await axios.post("http://localhost:4001/Api/User/sign-up", userDetails)
     console.log(response.data)  
     if (response.data.status === "success") {
         alert(response.data.message)
     }
  } catch (error) {
    console.log("Error Making post request") 
-   alert("error creating account, try again later")
+   alert("error creating account, try again later cd frontend npm install npm run dev Backend npm start")
  }
   };
 
